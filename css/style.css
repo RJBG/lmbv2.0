@@ -1,0 +1,170 @@
+html, body{
+	height: 100%;
+	background-color: transparent;
+}
+
+/*#logo{
+	-webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}*/
+
+.input-box{
+	border-color: none;
+    
+	border-bottom: 2px #CDC9C9 solid;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    
+	margin-bottom: 11px;
+	font-size: 11pt;
+    
+	text-transform:none;
+}
+
+
+
+.login-form{
+	width: 300px;
+}
+
+.navbar {
+	background: #101010;
+	border-bottom: 0px ;
+}
+
+.add-item-form{
+	border-right: 1px silver dotted;
+}
+
+.navbar-right{
+	background: transparent;
+}
+
+.user{
+	text-transform: uppercase;
+	background: rgb(70, 70, 60);
+	color: white;
+	margin-top: -5px;
+}
+
+.orange{
+	color: orange;
+}
+
+.icon{
+	border-radius: 1px;
+}
+
+.icon:hover{
+	background: transparent;
+	border-radius: 1px;
+}
+
+li{
+	display: inline;
+}
+
+fieldset{
+	margin: 5px;
+}
+
+.scheduler-border{
+	border:none;
+	width: auto;
+}
+
+.title-border{
+	border:none;
+	width: 150px;
+}
+
+.clearfix{
+	font-size: 8pt;
+}
+
+.badge{
+	background: red;
+	color: white;
+	font-size: 7pt;
+}
+
+.progress{
+	height: 10px;
+}
+
+#receive-table{
+	font-size: 9pt;
+}
+
+.tab-content{
+	border-bottom: 1px silver solid;
+	border-right: 1px silver solid;
+	border-left: 1px silver solid;
+	background-color: white;
+	padding: 10px;
+}
+
+.table{
+	background: white;
+	font-size: 10pt;
+}
+
+th{
+	background:#8B8989;
+	color: white;
+}
+
+.history-tbl{
+	background: white;
+	padding: 5px;
+	border: 1px silver solid;
+}
+
+#msg{
+	width: 500px;
+}
+
+.red{
+	color: red;
+}
+
+/* Create a small height at 30px */
+.navbar-sm {min-height:30px}
+.navbar-sm .navbar-brand,
+.navbar-sm .navbar-nav>li>a {padding-top:5px; padding-bottom:5px}
+.navbar-sm .navbar-brand {height: 30px}
+.navbar-sm .navbar-toggle {margin: 3px 9px 3px 0px; padding: 4px 4px 4px 4px;}
+.navbar-sm .navbar-toggle .icon-bar {width: 16px;}
+
+/*For sticky footer use*/
+	#wrap{
+		min-height: 100%;
+	    height: auto !important;
+	    height: 100%;
+		/* Negative indent footer by it's height */
+	    margin: 0 auto -60px;
+	    padding-top: 60px;
+	}
+	#push, #footer{
+		height: 60px;
+	}
+	#footer{
+		text-align: center;
+		font-size: 9pt;
+		background-color: transparent;
+		color: gray;
+	}
+	.container .credit{
+		margin: 20px 0;
+	}
+
+	/* Lastly, apply responsive CSS fixes as necessary */
+	@media (max-width: 767px) {
+		.footer {
+			margin-left: -20px;
+			margin-right: -20px;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+	}
