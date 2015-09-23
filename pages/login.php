@@ -44,6 +44,7 @@
 										&nbsp;&nbsp;Login&nbsp;&nbsp;
 										<!-- <span class="glyphicon glyphicon-log-in"></span> -->
 									</button>
+                                   
 									<button type="reset" class="btn btn-default btn-sm pull-right">
 										Clear all
 										<!-- <span class="glyphicon glyphicon-repeat"></span> -->

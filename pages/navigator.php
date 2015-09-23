@@ -169,7 +169,7 @@
 			<div class="dropdown">
 				<button class="btn dropdown-toggle btn-default" data-toggle="dropdown"><strong>Purchasing </strong><span class="caret"></span></button>
 				<ul class="dropdown-menu">
-					<li><a href="#">New Vendor</a></li>
+					<li><a href="?page=add_vendor">New Vendor</a></li>
 				</ul>
 			</div>
 		</legend>
