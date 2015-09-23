@@ -72,7 +72,7 @@
 						<th>Total</th>
 						<th>Total Qty</th>
 						<th>SO ID</th>
-						<th>Actions</th>
+						<th>Options</th>
 						</tr>
 					</thead>";
 
@@ -89,8 +89,21 @@
 							<td>".$rows['total']."</td>
 							<td>".$rows['totalQty']."</td>
 							<td>".$rows['soID']."</td>
-							<td><!-- <a href='ephp?srID=".$rows['srID']."'> Edit </a> &nbsp;&nbsp;&nbsp;&nbsp;-->
-							<a href='delete_sh.php?srID=".$rows['srID']."'><span class='glyphicon glyphicon-trash'></span> Delete</a></td>
+							<td><!-- Single Button -->
+                            
+                            <div class='btn-group'>
+                                <button type='button' class='btn btn-default btn-sm dropdown-toggle' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                                    Select Action <span class='caret'></span>
+                                </button>
+                                    <ul class='dropdown-menu'>
+                                        <li><a href='#'>View</a></li>
+                                        <li><a href='#'>Edit</a></li>
+                                        <li role='separator' class='divider'></li>
+                                        <li><a href='#'>Delete</a></li>
+                                    </ul>
+                            </div>
+                            <!-- End Single Button -->
+                            </td>
 						</tr>";
 					}
 					return $result;
@@ -161,7 +174,7 @@
 							<th>Phone</th>
 							<th>Telephone</th>
 							<th>Creation Date</th>
-							<th>Actions</th>
+							<th>Options</th>
 						</tr>
 					</thead>";
 
@@ -175,12 +188,21 @@
 					  		<td>".$rows['phone']."</td>
 			                <td>".$rows['telephone']."</td>
 					  		<td>".$rows['creationDate']."</td>
-			                <td><a href='index.php?page=edit_customer&customerID=".$rows['customerID']."'>
-			                	<span class='glyphicon glyphicon-pencil'></span> Edit</a> &nbsp;&nbsp;|&nbsp;&nbsp; 
-								
-								<a href='delete_customer.php?customerID=".$rows['customerID']."' id='id-btn-dialog1'>
-								<span class='glyphicon glyphicon-trash'></span> Delete</a>
-							</td>
+			                 <td><!-- Single Button -->
+                            
+                            <div class='btn-group'>
+                                <button type='button' class='btn btn-default btn-sm dropdown-toggle' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                                    Select Action <span class='caret'></span>
+                                </button>
+                                    <ul class='dropdown-menu'>
+                                        <li><a href='#'>View</a></li>
+                                        <li><a href='#'>Edit</a></li>
+                                        <li role='separator' class='divider'></li>
+                                        <li><a href='#'>Delete</a></li>
+                                    </ul>
+                            </div>
+                            <!-- End Single Button -->
+                            </td>
 						</tr>";
 					}
 				} else {
@@ -335,7 +357,7 @@
 			                <th>Tax Code</th>
 			                <th>Margin %</th>
 			                <th>Markup %</th>
-			                <th>Actions</th>
+			                <th>Options</th>
 			            </tr>
 					</thead>";
 
@@ -346,11 +368,21 @@
 							<td>".$rows['taxCode']."</td>
 							<td>".$rows['margin']."</td>
 							<td>".$rows['markup']."</td>
-			                <td><a href='index.php?page=edit_department&deptID=$rows[deptID]'>
-				                <span class='glyphicon glyphicon-pencil'></span> Edit</a>&nbsp;&nbsp;|&nbsp;&nbsp; 
-								<a href='delete_department.php?deptID=$rows[deptID]'>
-								<span class='glyphicon glyphicon-trash'></span> Delete</a> 
-							</td>
+			               <td><!-- Single Button -->
+                            
+                            <div class='btn-group'>
+                                <button type='button' class='btn btn-default btn-sm dropdown-toggle' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                                    Select Action <span class='caret'></span>
+                                </button>
+                                    <ul class='dropdown-menu'>
+                                        <li><a href='#'>View</a></li>
+                                        <li><a href='#'>Edit</a></li>
+                                        <li role='separator' class='divider'></li>
+                                        <li><a href='#'>Delete</a></li>
+                                    </ul>
+                            </div>
+                            <!-- End Single Button -->
+                            </td>
 						</tr>";
 					}
 				} else {

@@ -106,10 +106,23 @@
                 </li>
                 -->
                 
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hello, <?php echo $_SESSION['NAME']; ?>&nbsp;&nbsp;<span class="caret"></span> </a>
+               
+                    
+                 <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-globe btn-md" aria-hidden="true"><span class="badge">2</span></span></a>
                     <ul class="dropdown-menu">
                        <!-- <span class="dropdown-header user"> </span> -->
+                        <li><a href="#">Empty</a></li>
+                        <li><a href="#">Empty</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                 <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user btn-md" aria-hidden="true"></span> </a>
+                    <ul class="dropdown-menu">
+                       <!-- <span class="dropdown-header user"> </span> -->
+                        <li><a href="">Hello, <?php echo $_SESSION['NAME']; ?>&nbsp;&nbsp;</a></li>
                         <li><a href="?page=sample">Rented Vehicles</a></li>
                         <li><a href="#">Unit of Measures</a></li>
                         <li><a href="../fns/logout.php">Logout</a></li>

@@ -4,7 +4,7 @@
 			<strong>
 				&copy; 2015
 		    	LMB Construction | Powered with <i class="glyphicon glyphicon-heart"></i> by
-		    	<span class="blue bolder"><a href="#"> WebPlus</a></span>
+		    	<span class=""> WebPlus</span>
 		    </strong>
 		</p>
 	</div>

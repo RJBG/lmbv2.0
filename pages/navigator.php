@@ -1,5 +1,5 @@
 <div class="container">
-	<div class="alert alert-warning alert-dismissable">
+	<div class="alert alert-default alert-dismissable">
         <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
         <span class="glyphicon glyphicon-info-sign"></span>
         Hello! Welcome to <strong class="black"> LMB<small> Construction</small></strong>. This is your navigation page.
@@ -72,7 +72,7 @@
 	</fieldset>
 
 	<!-- CUSTOMER menu set -->
-	<fieldset class="col-sm-5 panel panel-default">
+	<fieldset class="col-sm-4 panel panel-default">
 		<legend class="scheduler-border">
 			<div class="dropdown">
 				<button class="btn dropdown-toggle btn-default" data-toggle="dropdown"><strong>Customer </strong><span class="caret"></span></button>
@@ -109,7 +109,7 @@
 	</fieldset>
 
 	<!-- INVENTORY menu set -->
-	<fieldset class="col-md-6 panel panel-default">
+	<fieldset class="col-md-7 panel panel-default">
 		<legend class="scheduler-border">
 			<div class="dropdown">
 				<button class="btn dropdown-toggle btn-default" data-toggle="dropdown"><strong>Inventory </strong><span class="caret"></span></button>
