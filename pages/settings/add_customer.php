@@ -10,13 +10,13 @@
     
     <ul class="nav nav-tabs">
         <li class="active">
-            <a href="#name_add" data-toggle="tab"> Name and Address </a>
+            <a href="#name_add" data-toggle="tab" style="color:silver;"> Name and Address </a>
         </li>
         <li>
-            <a href="#add_info" data-toggle="tab"> Additional Info </a>
+            <a href="#add_info" data-toggle="tab" style="color:silver;"> Additional Info </a>
         </li>
         <li>
-            <a href="#history" data-toggle="tab"> History </a>
+            <a href="#history" data-toggle="tab" style="color:silver;"> History </a>
         </li>
         <button type="button" class="btn btn-sm btn-danger pull-right" onclick="window.location.href='?page=navigator'">
             CLOSE <span class="glyphicon glyphicon-remove"></span>
@@ -29,35 +29,35 @@
                 <fieldset>
                     <h4>Name & Contact info</h4>
                     <div class="col-lg-2">
-                        <div class="form-group">
+                        <div class="form-group form-group-sm">
                             <label>Company Name</label>
                             <!-- <input type="hidden" name="customerID" value="<?php echo $id;?>" placeholder=""> -->
                             <input class="form-control input-box" name="company" type="text" placeholder="" autofocus required>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group form-group-sm">
                             <label>Company ID</label>
                             <input class="form-control input-box" name="companyID" type="text" placeholder="">                                                
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group form-group-sm">
                             <label>First Name</label>
                             <input class="form-control input-box" name="firstName" type="text" placeholder="">                                                
                         </div>
-                        <div class="form-group">
+                        <div class="form-group form-group-sm">
                             <label>M.I</label>
                             <input class="form-control input-box" name="mi" type="text" placeholder="">                                                
                         </div>
-                        <div class="form-group">
+                        <div class="form-group form-group-sm">
                             <label>Last Name</label>
                             <input class="form-control input-box" name="lastName" type="text" placeholder="">                                                
                         </div>
                     </div>
                     <div class="col-lg-2">
-                        <div class="form-group">
+                        <div class="form-group form-group-sm">
                             <label>Phone</label>
                                 <input class="form-control input-box" name="phone" type="text" placeholder="">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group form-group-sm">
                             <label>Telephone</label>
                                 <input class="form-control input-box" name="telephone" type="text" placeholder="">                                                
                         </div>
@@ -73,23 +73,44 @@
         </div>
 
         <div id="add_info" class="tab-pane fade in">
-            <h4>Addtional Information here</h4>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <fieldset>
+                <legend><h4>Addtional Information here</h4></legend>
+                <div class="form-group form-group-sm col-sm-2">
+                    <label>Alternative contact</label>
+                        <input class="form-control input-box" name="alternativeContact" type="text" placeholder="">
+                </div>
+                <div class="form-group form-group-sm col-sm-2">
+                    <label>Alternative Phone</label>
+                        <input class="form-control input-box" name="alternativePhone" type="text" placeholder="">
+                </div>
+                <div class="form-group form-group-sm col-sm-2">
+                    <label>City</label>
+                        <input class="form-control input-box" name="city" type="text" placeholder="">
+                </div>
+                <div class="form-group form-group-sm col-sm-2">
+                    <label>ZIP Code</label>
+                        <input class="form-control input-box" name="zipcode" type="text" placeholder="">
+                </div>
+                <div class="form-group form-group-sm col-sm-2">
+                    <label>Street</label>
+                        <input class="form-control input-box" name="street" type="text" placeholder="">
+                </div>
+                <div class="form-group form-group-sm col-sm-2">
+                    <label>Street 2</label>
+                        <input class="form-control input-box" name="street2" type="text" placeholder="">
+                </div>
+                <div class="form-group form-group-sm col-sm-4">
+                    <label>Ship Address</label>
+                        <textarea class="form-control input-box" name="shipAddress" type="text" placeholder=""></textarea>
+                </div>
+            </fieldset>
         </div>
 
         <div id="history" class="tab-pane fade in">
-            <h4>History here</h4>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <h4>Customer History</h4>
+            <table class='table table-compact table-striped table-hover customer-history-table display'>
+            <?php include_once '../fns/get_customer_history.php'; ?>
+            </table>
         </div>
     </div>
 

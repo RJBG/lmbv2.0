@@ -4,6 +4,7 @@ $(document).ready(function(){
 			window.location.assign("../pages/login.php?_error");
 		}else{
 			$.post("../fns/login_check.php", {user:user, pass:pass}, function(data, status){
+				// alert(data);
 				if (data == "success") {
 					window.location.assign("../pages/index.php");
 				}else{
@@ -19,7 +20,7 @@ $(document).ready(function(){
 		//alert(user);
         var pass = $("input[name='password']").val();
         //alert(pass);
-		//check_login_errors(user, pass);
+		check_login_errors(user, pass);
 	});
 
 	$("input[name='password']").keypress(function(){

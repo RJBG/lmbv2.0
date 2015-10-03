@@ -1,6 +1,6 @@
 html, body{
 	height: 100%;
-	background-color: #f1f1f1;
+	background-color: transparent;
 }
 
 /*#logo{
@@ -29,12 +29,18 @@ html, body{
 }
 
 .navbar {
-	background: black;
+	background: #101010;
 	border-bottom: 0px ;
 }
 
 .add-item-form{
-	border-right: 1px silver dotted;
+	border: 1px silver dotted;
+}
+
+.add-item-form legend{
+	width: auto;
+	padding: 5px;
+	border: 1px silver dotted;
 }
 
 .navbar-right{
@@ -108,7 +114,6 @@ fieldset{
 .table{
 	background: white;
 	font-size: 10pt;
-    
 }
 
 th{
@@ -117,23 +122,24 @@ th{
 }
 
 .history-tbl{
-	background: transparent;
-	padding: 5px;
+	background: white;
+	padding: 10px;
+	border: 1px silver solid;
 }
 
 #msg{
 	width: 500px;
 }
 
-.red{color: red;}
-.blue{color: blue;}
-.black{color: black;}
-.white{color: white;}
-.silver{color: silver;}
-
-.dataTable tr th{
-	width: 10px;
+.red{
+	color: red;
 }
+
+span.input-group-addon{
+	border: 0px transparent solid;
+	border-bottom: 2px silver solid;
+}
+
 /* Create a small height at 30px */
 .navbar-sm {min-height:30px}
 .navbar-sm .navbar-brand,
@@ -174,22 +180,6 @@ th{
 		}
 	}
 
-/* for badge */
-.noti_bubble {
-    position:absolute;
-    top: -8px;
-    right:-12px;
-    padding:3px 4px 5px 1px;
-    background-color:red;
-    color:white;
-    font-weight: normal;
-    font-size:12px;
-    text-align: center;
-    
-    border-radius:2px;
-    box-shadow:1px 1px 1px gray;
-}
-
 /*For table fixed header and scrollable content*/
 .scrolltable {
     overflow-x: scroll;
@@ -216,40 +206,4 @@ th{
 
 th, td {
    min-width: 140px; 
-}  
-
-/*New Added styles*/
-
-.employee-table tr td{
-	width: 50px;
-}
-
-.item{
-	cursor: pointer;
-}
-
-.item-info{
-	background-color: white;
-	border-right: 2px black solid;
-	border-left: 2px black solid;
-}
-
-.itemName{
-	background-color: orange;
-}
-
-.store-item-data table tr td{
-	text-align: right;
-	min-width: 20px;
-	padding: 2px;
-}
-
-.store-item-data strong{
-	color: blue;
-	font-style: italic;
-}
-
-.store-item-data table tr td.sid{
-	border-bottom: 1px blue solid;
-	text-align: left;
-}
+} 

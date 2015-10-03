@@ -1,37 +1,48 @@
-<div class="container">
+<?php  
+    $val = "";
+    if (isset($_GET["id"])) {
+        $val = $_GET["id"];
+    }
+?>
+<input type="hidden" id="ss" value="<?php echo $val; ?>">
+<div class="container-fluid">
 	<button class="btn btn-sm btn-info" onclick="window.location.href='?page=add_item'">
-        <span class="glyphicon glyphicon-plus"></span> Add Item
+        <span class="glyphicon glyphicon-plus"></span> Add Item 
     </button>
     <button type="button" class="btn btn-sm btn-danger pull-right" onclick="window.location.href='?page=navigator'">
     	CLOSE <span class="glyphicon glyphicon-remove"></span>
-    </button><br><br>
-    <div class="history-tbl">
-        <form method="post" class="col-lg-3">
+    </button>
+    <div class="history-tbl row">
+        <form method="POST" class="col-sm-3">
+            <div class="form-group">
+                <table id="item-list-table" class="table table-hover">
+                    <?php include_once '../fns/get_item_list_table.php'; ?>
+                </table>
+            </div>
+        </form>
+
+        <div class="col-sm-9" id="item-info">
+            <h3 class='alert alert-info alert-dismissable'>
+                <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
+                <span class='glyphicon glyphicon-info-sign'></span>
+                Choose Item from list and information will be shown here. . .
+            </h3>
+        </div>
+        <!-- <form method="post" class="col-lg-3">
             <div class="form-group">
                 <label></label>
                 <select class="form-control input-box" name="store" id="store-option">
-                    <?php include_once '../fns/get_store_list.php'; ?>
                     <option value="">View All</option>
+                    <?php include_once '../fns/get_store_list.php'; ?>
                 </select>
             </div>
         </form>
         
         <div class="table-responsive col-lg-12">
-            <caption>Customer list</caption>
+            <caption><h4>Item list</h4></caption>
             <table class="table table-striped table-compact table-bordered table-hover" id="item-table-list">
                 <?php include_once '../fns/get_item_table.php'; ?>
             </table>
-            <nav>
-      <ul class="pagination pagination">
-        <li><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
-      </ul>
-    </nav>
-        </div>
+        </div> -->
     </div>
 </div>

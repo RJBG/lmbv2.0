@@ -21,24 +21,25 @@
     	<div id="department" class="tab-pane fade in active">
     		<form method="post">
     			<fieldset>
-    				<div class="col-lg-2">
-    					<div class="form-group">
+                    <legend><h4>New Department</h4></legend>
+    				<div>
+    					<div class="form-group form-group-sm col-sm-2">
                             <label>Department Code</label>
                         	<input class="form-control input-box" name="deptCode" type="text">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group form-group-sm col-sm-2">
                             <label>Department Name </label>
                             <input class="form-control input-box" name="deptName" type="text">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group form-group-sm col-sm-2">
                             <label>Tax Code</label>
                             <input class="form-control input-box" name="taxCode" type="text">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group form-group-sm col-sm-2">
                             <label>Margin</label>
                             <input class="form-control input-box" name="margin" type="text">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group form-group-sm col-sm-2">
                             <label>Markup %</label>
                             <input class="form-control input-box" name="markup" type="text">
                         </div>

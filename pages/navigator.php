@@ -199,7 +199,7 @@
 			</button>
 		</div>
 		<div class="col-xs-2">
-			<button class="btn-link icon" onclick="location.href='?page=under_cons'">
+			<button class="btn-link icon" onclick="location.href='?page=purchase_order'">
 				<center>
 					<img src="../images/icons/pos.png" width="80px" draggable="false">
 				</center>
@@ -213,7 +213,7 @@
 			<img src="../images/icons/arrow.png" class="img-round" width="45px">
 		</div>
 		<div class="col-xs-2">
-			<button class="btn-link icon" onclick="location.href='?page=under_cons'">
+			<button class="btn-link icon" onclick="location.href='?page=purchase_list'">
 				<center>
 					<img src="../images/icons/po.png" width="80px" draggable="false">
 				</center>

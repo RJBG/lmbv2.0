@@ -2,10 +2,9 @@
 	include_once '../dao/base_dao.php';
 
 	try {
-		$key = $_POST["key"];
 		$access = new DAO();
-		echo $access->get_customer_list($key);
+		echo $access->get_vendor_list();
 	} catch (PDOException $e) {
-		echo $e->getMessage();
+		$e->getMessage();
 	}
 ?>

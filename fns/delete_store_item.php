@@ -2,9 +2,10 @@
 	include_once '../dao/base_dao.php';
 
 	try {
-		$key = $_POST["key"];
+		$id = $_POST["delete_id"];
 		$access = new DAO();
-		echo $access->get_customer_list($key);
+		echo $access->delete_store_item($id);
+		header("location: ../pages/index.php?page=items");
 	} catch (PDOException $e) {
 		echo $e->getMessage();
 	}

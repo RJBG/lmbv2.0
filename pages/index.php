@@ -19,7 +19,7 @@
 			
 			include_once "../layout/header.php";
 		?>
-		<div class="container">
+		<div class="container-fluid">
 			<?php
 				function include_once_func($goto)
 				{
@@ -68,6 +68,21 @@
 					}
 					elseif ($_GET['page'] == "add_department" ) {
 						$page = "/settings/add_department.php";
+					}
+					elseif ($_GET['page'] == "employee" ) {
+						$page = "/settings/employee.php";
+					}
+					elseif ($_GET['page'] == "add_employee" ) {
+						$page = "/settings/add_employee.php";
+					}
+					elseif ($_GET['page'] == "add_unit_of_measure" ) {
+						$page = "/settings/add_unit_of_measure.php";
+					}
+					elseif ($_GET['page'] == "purchase_list" ) {
+						$page = "/settings/purchase_list.php";
+					}
+					elseif ($_GET['page'] == "purchase_order" ) {
+						$page = "/settings/purchase_order.php";
 					}
 					elseif ($_GET['page'] == "under_cons") {
 						$page = "/settings/under_construction.php";

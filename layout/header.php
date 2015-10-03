@@ -53,12 +53,12 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Inventory<!-- <span class="caret"></span> --></a>
                     <ul class="dropdown-menu">
-                        <li><a href="?page=sample">New Item</a></li>
+                        <li><a href="?page=add_item">New Item</a></li>
                         <li><a href="?page=add_department">New Department</a></li>
                         <li><a href="?page=add_vendor">New Vendor</a></li>
-                        <li><a href="#">Empty</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Item List</a></li>
+                        <li><a href="?page=add_unit_of_measure">New Unit of Measure</a></li>
+                        <li class="divider"> </li>
+                        <li><a href="?page=items">Item List</a></li>
                         <li><a href="?page=department">Department List</a></li>
                         <li><a href="#">Price Manager</a></li>
                     </ul>
@@ -72,15 +72,15 @@
                         <li><a href="#">New Vendor</a></li>
                         <li><a href="#">Receive History</a></li>
                         <li><a href="#">Purchase Order List</a></li>
-                        <li><a href="#">Vendor List</a></li>
+                        <li><a href="?page=vendor.php">Vendor List</a></li>
                     </ul>
                 </li>
 
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Employees<!-- <span class="caret"></span> --></a>
                     <ul class="dropdown-menu">
-                        <li><a href="?page=sample">Employee List</a></li>
-                        <li><a href="#">New Employee</a></li>
+                        <li><a href="?page=employee">Employee List</a></li>
+                        <li><a href="?page=add_employee">New Employee</a></li>
                     </ul>
                 </li>
 
@@ -122,7 +122,10 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user btn-md" aria-hidden="true"></span> </a>
                     <ul class="dropdown-menu">
                        <!-- <span class="dropdown-header user"> </span> -->
-                        <li><a href="">Hello, <?php echo $_SESSION['NAME']; ?>&nbsp;&nbsp;</a></li>
+                        <li role="presentation" class="dropdown-header">
+                            <strong>Hello! <?php echo $_SESSION['NAME']; ?></strong>
+                            <br><small>Logged in as <strong><?php echo $_SESSION['USER_LEVEL']; ?></strong></small>
+                        </li>
                         <li><a href="?page=sample">Rented Vehicles</a></li>
                         <li><a href="#">Unit of Measures</a></li>
                         <li><a href="../fns/logout.php">Logout</a></li>

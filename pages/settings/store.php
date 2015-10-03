@@ -5,7 +5,7 @@
     <button type="button" class="btn btn-sm btn-danger pull-right" onclick="window.location.href='?page=navigator'">
     	CLOSE <span class="glyphicon glyphicon-remove"></span>
     </button><br><br>
-    <div class="table-responsive history-tbl">
+    <div class="history-tbl">
     	<table class="table table-striped table-compact table-hover">
             <caption>Store list</caption>
     		<?php include_once '../fns/get_store_table.php'; ?>

@@ -12,4 +12,28 @@ $(document).ready(function(){
 	$("input").focus(function(){
 		$("#msg").hide("fade");
 	});
+
+	// For Data table plugin
+	// var table = $('.table-fixed').DataTable();
+
+ //    new $.fn.dataTable.FixedHeader( table );
+
+ 	$(".customer-table").DataTable({
+ 		ordering: false
+ 	});
+ 	$(".employee-table").DataTable({
+ 		ordering: false
+ 	});
+ 	$("#item-list-table").DataTable({
+ 		ordering: false
+ 	});
+ 	$(".customer-history-table").DataTable({
+ 		ordering: false
+ 	});
+ 	$(".UOM-table").DataTable({
+ 		ordering: false
+ 	});
+ 	$(".purchase-list").DataTable({
+ 		ordering: false
+ 	});
 });
